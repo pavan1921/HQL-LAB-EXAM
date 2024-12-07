@@ -32,8 +32,6 @@ public class ClientDemo {
             session.close();
         }
     }
-
-    // Method to delete a department by ID using HQL
     public static void deleteDepartment(int id) {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
